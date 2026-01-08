@@ -82,12 +82,6 @@ try:
         # Fallback: simple threshold-based recognition
         st.write("## Using fallback recognition")
         # Simple heuristic based on pixel intensity
-        st.write(f"Digit {i}: {prob:.2%}")
-
-    else:
-        # Fallback: simple threshold-based recognition
-        st.write("## Using fallback recognition")
-        # Simple heuristic based on pixel intensity
         digit_guess = np.argmax(np.sum(img_array.reshape(8, 8), axis=0)) % 10
         st.write(f"Estimated digit: **{digit_guess}**")
 

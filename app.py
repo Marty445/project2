@@ -24,7 +24,7 @@ def load_model():
         y = digits.target
 
         X_train, _, y_train, _ = train_test_split(X, y, test_size=0.2, random_state=42)
-             model = MLPClassifier(
+        model = MLPClassifier(
             hidden_layer_sizes=(100,),
             max_iter=100,
             random_state=42

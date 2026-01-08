@@ -82,7 +82,7 @@ try:
         # Fallback: simple threshold-based recognition
         st.write("## Using fallback recognition")
         # Simple heuristic based on pixel intensity
-                  st.write(f"Digit {i}: {prob:.2%}")
+        st.write(f"Digit {i}: {prob:.2%}")
 
     else:
         # Fallback: simple threshold-based recognition
